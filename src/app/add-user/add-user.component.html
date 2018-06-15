@@ -1,0 +1,18 @@
+<h2>Ajouter un utilisateur</h2>
+<form [formGroup]="userForm">
+    <div class="form-group">
+        <label>
+            Nom: 
+            <input class="form-control" formControlName="name"/>
+        </label> 
+        <label>
+            Age: 
+            <input class="form-control" formControlName="age"/>
+        </label>
+    </div>
+</form>
+<p>Form value: {{userForm.value | json}}</p>
+<p>Status: {{userForm.status}}</p>
+<!-- valud, invalid, pending, disabled -->
+<p>Pristine: {{userForm.pristine}}</p>
+<p>Untouched: {{userForm.untouched}}</p>

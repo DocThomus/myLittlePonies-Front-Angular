@@ -1,0 +1,5 @@
+<p-accordion [multiple]="true" class="listRaces">
+    <div *ngFor="let r of myRaces">
+        <app-race-details [race]="r"></app-race-details>
+    </div>
+</p-accordion>

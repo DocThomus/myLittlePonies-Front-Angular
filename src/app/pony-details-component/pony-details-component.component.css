@@ -1,0 +1,9 @@
+p-card {    
+    display: inline-block;
+    margin:15px;
+    text-align: center;
+}
+
+h3 {
+    margin-bottom: 1em;
+}

@@ -1,0 +1,49 @@
+<p-messages [(value)]="msgs"></p-messages>
+
+
+<form (ngSubmit)="onSubmit()">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-6">
+                <p-panel>
+                    <p-header>
+                        <h3>Ajouter une course</h3>
+                    </p-header>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Ville</label>
+                                        <input type="text" class="form-control" id="city" required [(ngModel)]="model.city" name="city" pInputText placeholder="City">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Date</label>
+                                        <input type="date" class="form-control" id="date" required [(ngModel)]="model.date" name="date" placeholder="Date">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <p-button label="Ajouter" type="submit"></p-button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <p-listbox [options]="ponies" [(ngModel)]="model.ponies" multiple="multiple" checkbox="checkbox" filter="filter" optionLabel="name"
+                                name="ponies">
+                                <p-header>Ponies</p-header>
+                            </p-listbox>
+                        </div>
+                    </div>
+                </p-panel>
+            </div>
+        </div>
+    </div>
+</form>

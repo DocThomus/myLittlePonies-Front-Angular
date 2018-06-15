@@ -1,3 +1,7 @@
+# myLittlePonies-Front-Angular
+TP Angular : Front End du projet myLittlePonies (listes de poneys, et de courses de poneys).
+Fonctionne sur un serveur Node.js (port 4200)
+
 # Mylittleponies
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
