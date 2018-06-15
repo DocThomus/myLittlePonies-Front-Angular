@@ -1,0 +1,6 @@
+<h2>{{reception}}</h2>
+<ul>
+    <li *ngFor="let u of user">
+        <app-user-details [user]="u" (onSelect)="onSelectedOnTheParent($event)"></app-user-details>
+    </li>
+</ul>

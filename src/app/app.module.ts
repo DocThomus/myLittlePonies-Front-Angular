@@ -37,6 +37,8 @@ import { RaceService } from './race.service';
 import { PonyServiceService } from './pony-service.service';
 import { MessageService } from 'primeng/components/common/messageservice';
 import { UpdatePonyComponent } from './update-pony/update-pony.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
+import { UsersComponent } from './users/users.component';
 
 const appRoutes: Routes = [
     { path: "Ponies", component: PoniesComponentComponent },
@@ -56,7 +58,9 @@ const appRoutes: Routes = [
         AddPonyComponent,
         AddCourseComponent,
         AddUserComponent,
-        UpdatePonyComponent
+        UpdatePonyComponent,
+        UserDetailsComponent,
+        UsersComponent
     ],
     imports: [
         HttpClientModule,

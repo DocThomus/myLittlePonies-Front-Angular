@@ -15,9 +15,11 @@ export class PonyServiceService {
         this.myPonies = PONIES;
         this.urlService = 'http://localhost:8080/myLittlePonies/pony';
     }
+    
     getPonies(): Observable<Pony[]> {
         return this.http.get<Pony[]>(this.urlService+ '/ponies');
     }
+
     addPony(pony: Pony) {
         return this.http.post(this.urlService, pony, {headers: {'Content-Type': 'application/json' }}).subscribe();
     }
